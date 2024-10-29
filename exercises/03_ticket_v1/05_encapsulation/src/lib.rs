@@ -1,8 +1,8 @@
 pub mod ticket {
     pub struct Ticket {
-        title: String,
         description: String,
         status: String,
+        title: String,
     }
 
     impl Ticket {
@@ -24,9 +24,9 @@ pub mod ticket {
             }
 
             Ticket {
-                title,
                 description,
                 status,
+                title,
             }
         }
 
@@ -34,6 +34,17 @@ pub mod ticket {
         //  - `title` that returns the `title` field.
         //  - `description` that returns the `description` field.
         //  - `status` that returns the `status` field.
+        pub fn title(self) -> String {
+            return self.title;
+        }
+
+        pub fn description(self) -> String {
+            return self.description;
+        }
+
+        pub fn status(self) -> String {
+            return self.status;
+        }
     }
 }
 
